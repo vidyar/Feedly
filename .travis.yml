@@ -1,16 +1,11 @@
 language: python
 python:
   - 2.7
-notifications:
-  email:
-    - tbarbugli@gmail.com
-    - thierryschellenbach@gmail.com
 cache:
   directories:
     - $HOME/.pip-cache/
 services:
-  - redis
-  - cassandra
+    - cassandra
 before_install:
   - sudo apt-get install libev4 libev-dev
   - git clone https://github.com/tbarbugli/feedly_pin.git pinterest_example
