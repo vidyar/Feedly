@@ -5,6 +5,7 @@ cache:
   directories:
     - $HOME/.pip-cache/
 services:
+    - redis
     - cassandra
 before_install:
   - sudo apt-get install libev4 libev-dev
